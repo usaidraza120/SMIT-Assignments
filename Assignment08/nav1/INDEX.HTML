@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+  
+</head>
+<STYLe>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+    border-bottom: 1px solid #eee;
+}
+
+/* Logo */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+}
+
+/* Center Links */
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+/* Right Buttons */
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.login {
+    text-decoration: none;
+    color: #111;
+    font-size: 14px;
+}
+
+.signup {
+    text-decoration: none;
+    background: #111;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+</STYLe>
+<body>
+
+    <nav class="navbar">
+
+        <!-- Logo -->
+        <div class="logo">
+            <img src="https://res.cloudinary.com/saylani-welfare/image/upload/v1788967597/assignment/assignment/1788967596_0_qdhrgh7v.webp" alt="Logo">
+            <span>Shadcnblocks.com</span>
+        </div>
+
+        <!-- Center Links -->
+        <div class="nav-links">
+            <a href="#">Products⌄</a>
+            <a href="#">Company⌄</a>
+            <a href="#">Contact</a>
+        </div>
+
+        <!-- Right Buttons -->
+        <div class="buttons">
+            <a href="#" class="login">Log in</a>
+            <a href="#" class="signup">Sign up</a>
+        </div>
+
+    </nav>
+
+</body>
+</html>
