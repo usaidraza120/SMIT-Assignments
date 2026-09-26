@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In  / Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #f5f5f5;
+        }
+
+        .container {
+            width: 900px;
+            height: 550px;
+            display: flex;
+            background: white;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        /* LEFT SIDE */
+        .signin {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: #fff;
+            padding: 40px;
+        }
+
+        .signin h1 {
+            font-size: 30px;
+            color: #111;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 15px;
+        }
+
+        .social-icons span {
+            width: 35px;
+            height: 35px;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            color: #315b7d;
+        }
+
+        .or {
+            color: #777;
+            font-size: 13px;
+        }
+
+        .input-box {
+            width: 280px;
+            height: 42px;
+            border: none;
+            background: #e9edf2;
+            padding: 0 12px;
+            outline: none;
+        }
+
+        .forgot {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .signin-btn {
+            width: 125px;
+            height: 38px;
+            border: none;
+            border-radius: 25px;
+            background: #ff4b2b;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* RIGHT SIDE */
+        .signup {
+            width: 50%;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background: #ff4333;
+        }
+
+        .signup h1 {
+            font-size: 30px;
+        }
+
+        .signup p {
+            font-size: 14px;
+            line-height: 1.6;
+            width: 280px;
+        }
+
+        .signup-btn {
+            width: 130px;
+            height: 40px;
+            border: 1px solid white;
+            border-radius: 25px;
+            color: white;
+            font-size: 12px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="signin">
+
+            <h1>Sign in</h1>
+
+            <div class="social-icons">
+                <span>f</span>
+                <span>G+</span>
+                <span>in</span>
+            </div>
+
+            <div class="or">
+                or use your account
+            </div>
+
+            <input type="email" class="input-box" placeholder="Email">
+
+            <input type="password" class="input-box" placeholder="Password">
+
+            <div class="forgot">
+                Forgot your password?
+            </div>
+
+            <button class="signin-btn">
+                SIGN IN
+            </button>
+
+        </div>
+
+        <div class="signup">
+
+            <h1>Hello, Friend!</h1>
+
+            <p>
+                Enter your personal details and start
+                journey with us
+            </p>
+
+            <button class="signup-btn">
+                SIGN UP
+            </button>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
